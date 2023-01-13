@@ -15,3 +15,20 @@ navLinks.forEach(link => {
     });
   });
 });
+
+const filterBtns = document.querySelectorAll(".filter-btn");
+
+filterBtns.forEach(btn => {
+  btn.addEventListener("click", function() {
+    const category = this.dataset.category;
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+      if (card.dataset.category === category) {
+        card.style.display = "block";
+      } else {
+        card.style.display = "none";
+      }
+    });
+  });
+});
