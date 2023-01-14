@@ -1,4 +1,47 @@
-img{
-    height: 70%;
-    width: 70%;
+/* @media (min-width:992px) */
+
+.col-log-6 {
+    flex:auto;
+    width: 50%
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.d-block {
+    display: block!important;
+}
+ .img-fluid {
+    max-width:100%;
+    height: auto;
+} 
+/* img,svg {
+    vertical-align: middle;
+} */
+
+*, ::after , ::before {
+    box-sizing: border-box;
+}
+
+
+
+.ms-3 {
+padding-right: 10px;
+}
+
+#photo {
+border-radius: 10px;
+background-blend-mode: multiply;
+
+}
+
+#recipes {
+    padding-bottom: 5%;
 }
