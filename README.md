@@ -2,7 +2,7 @@
 `This project showcases a simple but effective porfolio, with my best projects to the date.`
 
 # Webpage 
-`https://carternadain.github.io/Carters_Portfolio/`
+https://carternadain.github.io/Carters_Portfolio/
 
 
 # Getting Started
@@ -22,4 +22,4 @@ If you'd like to use this porfolio yourself feel free to copy this code you will
 `css`
 
 # Authors
-`https://github.com/carternadain`
+https://github.com/carternadain
