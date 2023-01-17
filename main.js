@@ -5,16 +5,23 @@ navbarToggler.addEventListener("click", function() {
   navbarNav.classList.toggle("collapse");
 });
 
-const navLinks = document.querySelectorAll(".nav-link");
+// Get the "About" and "Contact" links
+const aboutLink = document.querySelector("#about-me");
+const contactLink = document.querySelector("#contact");
 
-navLinks.forEach(link => {
-  link.addEventListener("click", function(event) {
-    event.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
+// Add click event listener to the "About" link
+aboutLink.addEventListener("click", function(event) {
+  event.preventDefault();
+  document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
 });
+
+// Add click event listener to the "Contact" link
+contactLink.addEventListener("click", function(event) {
+  event.preventDefault();
+  document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+});
+
+
 
 const filterBtns = document.querySelectorAll(".filter-btn");
 
