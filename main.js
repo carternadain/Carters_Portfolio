@@ -54,16 +54,9 @@ cards.forEach(function(card) {
   });
 });
 
-// const card = document.querySelector(".card");
+const darkModeBtn = document.getElementById('darkModeBtn');
+const body = document.body;
 
-// // Add a mouseover event listener to the card
-// card.addEventListener("mouseover", function() {
-//   // Add the "hover" class to the card when the mouse is over it
-//   card.classList.add("hover");
-// });
-
-// // Add a mouseout event listener to the card
-// card.addEventListener("mouseout", function() {
-//   // Remove the "hover" class from the card when the mouse is not over it
-//   card.classList.remove("hover");
-// });
+darkModeBtn.addEventListener('click', () => {
+  body.classList.toggle('dark-mode');
+});
