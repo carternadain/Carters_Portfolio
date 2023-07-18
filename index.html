@@ -8,8 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Xk1Ln7qEz1A8HzGtCE4xRqPlcc4KuUCAP2mg8e7AZq5fbh4BBcvSX4fKgumndKQzYIgkqotPkeAjuCtMHlES5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
+
   <body>
     <header>
         <div class="mb-5">
@@ -31,13 +34,13 @@
                     <a class="nav-link" href="https://docs.google.com/document/d/1oNjixFHy7YkJmyEIgYh3X6UzTYFRrwqo/edit?usp=sharing&ouid=112437315965066852301&rtpof=true&sd=true" target="_blank" >Resume</a>
                   </li>
                   <li class="nav-item">
-                    <a id="contact" class="nav-link" href="#skills">Skills</a>
+                    <a  class="nav-link" href="https://github.com/carternadain?tab=repositories" target="_blank">Github</a>
                   </li>
                   <li class="nav-item">
                     <a id="contact" class="nav-link" href="#projects">Projects</a>
                   </li>
                   <li class="nav-item">
-                    <a id="contact" class="nav-link" href="#footer">Contact</a>
+                    <a id="info" class="nav-link" href="#footer">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -46,88 +49,146 @@
           </nav>
           
             <!-- About me section with authors picture -->
-          <div class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-              <div class="col-10 col-sm-8 col-lg-6">
-                <img src="images/carter.JPG" class="d-block mx-lg-auto img-fluid" id="photo" alt="carter-selfie" width="700" height="500" loading="lazy" > 
-              </div>
-              <div class="col-log-6">
-                <h1 id="story"  class="display-5 fw-bold lh-1 mb-3">My Story</h1>
-                <p class="lead">
-                    <p>I am a highly motivated and experienced software developer with a passion for creating innovative and user-friendly web applications. I have experience in a variety of programming languages and frameworks, including JavaScript, HTML, CSS, and Bootstrap. I am always looking to learn new skills and stay up-to-date with the latest industry trends. In my free time, I enjoy hiking, playing guitar, and experimenting with new technologies.</p>
-
-                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                  <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Explore</button>
+            <div class="container col-xxl-8 px-4 py-5">
+              <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                  <img src="images/carter.JPG" class="d-block mx-lg-auto img-fluid" id="photo" alt="carter-selfie" loading="lazy"> 
+                </div>
+                
+                <div class="col-log-6 d-flex flex-column align-items-center">
+                  <h1 id="story" class="display-5 fw-bold lh-1 mb-3 text-center">My Story</h1>
+                  <p class="h2 text-center">Software Developer</p>
+                  <p class="lead text-center">
+                    I'm a motivated and experienced software developer with a passion for creating innovative web applications. Proficient in JavaScript, HTML, CSS, and Bootstrap. Constantly learning and staying up-to-date with industry trends.
+                  </p>
+                  <div class="d-flex justify-content-center mb-3">
+                    <i class="fab fa-html5 language-icon"></i>
+                    <i class="fab fa-css3-alt language-icon"></i>
+                    <i class="fab fa-js-square language-icon"></i>
+                    <i class="fab fa-node-js language-icon"></i>
+                    <i class="fas fa-database language-icon"></i>
+                    <i class="fab fa-react language-icon"></i>
+                  </div>
+            
+                  <div class="d-grid gap-2 d-md-flex justify-content-center mb-3">
+                    <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Download Resume</button>
+                  </div>
                 </div>
               </div>
+            </div>
+            
+
+
+
+          <div class="container py-5">
+  <h1 class="text-center text-decoration-underline" id="projects">Project Section</h1>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="project-card">
+          <img src="images/recipe-box.jpg" alt="Project 1" class="project-image">
+          <div class="project-content">
+            <div class="project-description">
+              <p>This application uses a third-party api to generate random recipes.</p>
+            </div>
+            <div class="buttons">
+              <a class="btn btn-dark" href="https://mmilner29.github.io/the-recipe-hub/" target="_blank">View Project</a>
+              <a class="btn btn-dark" href="https://github.com/yourusername/your-repo" target="_blank">View Code</a>
             </div>
           </div>
-      
-          <h1 class="text-center text-decoration-underline" id="recipes">Project Section</h1>
-      
-            <!-- Project section with images /buttons to link to them -->
-            <div class="card-group">
-              <div class="card">
-               <div class="card"></div> <img src="images/recipe-box.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Recipe Hub</h5>
-                  <p class="card-text">The Recipe Hub is an application designed for individuals who enjoy experimenting with different types of meals and cocktails. It utilizes data from an API to generate a randomly selected recipe, providing users with a new and exciting culinary experience. Users also have the option to save their favorite recipes in local storage for easy access and future reference. This application caters to those who value variety in their meals and are always looking to try something new.</p>
-                  <a class="btn btn-primary" id="recipe" href="https://mmilner29.github.io/the-recipe-hub/" target="_blank" >View Project</a>
-                </div>
-              </div>
-
-              <div class="card">
-                <img src="images/two-pizzas-and-wine.jpg" class="card-img-top" alt="..."  >
-                <div class="card-body">
-                  <h5 class="card-title">Job Tracker v1</h5>
-                  <p class="card-text">The job tracker application helps job seekers easily keep track of all the jobs they've applied for. It allows users to input job information such as job name, salary, date applied, and notes, and saves this information even when the page is reloaded. It also includes a "Save" and "Delete" button for users to keep their job applications organized. The application provides a simple and convenient way to stay on top of job applications..</p>
-                  <a class="btn btn-primary" id="recipe" href="https://carternadain.github.io/Job_Tracker-v1/" target="_blank" >View Project</a>
-                </div>
-              </div>
-              
-              <div class="card">
-                <img src="images/password.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Password Generator</h5>
-                  <p class="card-text">This application utilizes JavaScript to generate a random password that can be used for various online accounts. The primary function of the application is to provide users with a secure and unique password that can be easily generated. The user can then use this randomly generated password for any new account they create on the web.</p>
-                  <a class="btn btn-primary" id="recipe" href="https://carternadain.github.io/js-password-generator/" target="_blank" >View Project</a>
-                </div>
-              </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="project-card">
+          <img src="images/m-laptop.jpg" alt="Project 2" class="project-image">
+          <div class="project-content">
+            <div class="project-description">
+              <p>Description for Project 2</p>
             </div>
-
-        <!-- Footer section with social links / social tabs -->
-        <footer id= "footer" class="pt-5">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <p>Copyright © 2023 Carters Portfolio</p>
-                </div>
-                <div class="col-md-6">
-                  <ul class="list-inline text-right">
-                    <li class="list-inline-item">
-                      <a href="mailto:cnadain@gmail.com">cnadain@gmail.com</a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://www.linkedin.com/in/carter-nadain-043259229/" target="_blank">
-                        <i class="fab fa-linkedin"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://github.com/carternadain" target="_blank">
-                        <i class="fab fa-github"></i>
-                      </a>
-                    </li>
-                    <li class="list-inline-item">
-                      <a href="https://twitter.com/myusername"target="_blank">
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            <div class="buttons">
+              <a class="btn btn-dark" href="https://project2.com" target="_blank">View Project</a>
+              <a class="btn btn-dark" href="https://github.com/yourusername/project2" target="_blank">View Code</a>
             </div>
-          </footer> 
-          
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="project-card">
+          <img src="images/password.jpg" alt="Project 2" class="project-image">
+          <div class="project-content">
+            <div class="project-description">
+             
+              <p>Description for Project 3</p>
+            </div>
+            <div class="buttons">
+              <a class="btn btn-dark" href="https://project2.com" target="_blank">View Project</a>
+              <a class="btn btn-dark" href="https://github.com/yourusername/project2" target="_blank">View Code</a>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </div>
+  
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+    </div>
+    <div class="container py-5">
+    </div>
+                
+  <div class="container py-5">
+  <h1 class="text-center text-decoration-underline" id="about">About Me</h1>
+  <div class="row align-items-center">
+    <div class="col-md-4 col-12">
+      <div class="about-image">
+        <img id="about-me" src="images/aboutme.JPG" class="img-fluid" alt="Profile Image">
+      </div>
+    </div>
+    <div class="col-md-8 col-12 mt-md-0 mt-4">
+      <div class="about-content">
+        <p>Hey there! I'm all about embracing my hobbies and passions. I love capturing beautiful moments through photography, pushing my limits at the gym, jetting off to new destinations, and staying up-to-date with the latest tech trends.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+           
+        
+                            
+<!-- Footer section -->
+<footer id="footer" class="pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p class="text-center">Copyright © 2023 Carters Portfolio</p>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-inline text-center">
+          <li class="list-inline-item">
+            <a href="mailto:cnadain@gmail.com">cnadain@gmail.com</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/carter-nadain-043259229/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://github.com/carternadain" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://twitter.com/myusername" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
 
 
     <script src="main.js" async></script>

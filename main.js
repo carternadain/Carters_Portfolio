@@ -8,6 +8,7 @@ navbarToggler.addEventListener("click", function() {
 // Get the "About" and "Contact" links
 const aboutLink = document.querySelector("#about-me");
 const contactLink = document.querySelector("#contact");
+const infoLink = document.querySelector("#info");
 
 // Add click event listener to the "About" link
 aboutLink.addEventListener("click", function(event) {
@@ -21,42 +22,61 @@ contactLink.addEventListener("click", function(event) {
   document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
 });
 
-
-
-const filterBtns = document.querySelectorAll(".filter-btn");
-
-filterBtns.forEach(btn => {
-  btn.addEventListener("click", function() {
-    const category = this.dataset.category;
-    const cards = document.querySelectorAll(".card");
-
-    cards.forEach(card => {
-      if (card.dataset.category === category) {
-        card.style.display = "block";
-      } else {
-        card.style.display = "none";
-      }
-    });
-  });
+infoLink.addEventListener("click", function(event) {
+  event.preventDefault();
+  document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
 });
+// const filterBtns = document.querySelectorAll(".filter-btn");
+
+// filterBtns.forEach(btn => {
+//   btn.addEventListener("click", function() {
+//     const category = this.dataset.category;
+//     const cards = document.querySelectorAll(".card");
+
+//     cards.forEach(card => {
+//       if (card.dataset.category === category) {
+//         card.style.display = "block";
+//       } else {
+//         card.style.display = "none";
+//       }
+//     });
+//   });
+// });
 
 
-// Get the card element
-const cards = document.querySelectorAll(".card");
+// // Get the card element
+// const cards = document.querySelectorAll(".card");
 
-cards.forEach(function(card) {
-  card.addEventListener("mouseover", function() {
-    card.classList.add("hover");
-  });
+// cards.forEach(function(card) {
+//   card.addEventListener("mouseover", function() {
+//     card.classList.add("hover");
+//   });
 
-  card.addEventListener("mouseout", function() {
-    card.classList.remove("hover");
-  });
-});
+//   card.addEventListener("mouseout", function() {
+//     card.classList.remove("hover");
+//   });
+// });
 
 const darkModeBtn = document.getElementById('darkModeBtn');
 const body = document.body;
 
 darkModeBtn.addEventListener('click', () => {
   body.classList.toggle('dark-mode');
+});
+
+
+
+
+var swiper = new Swiper('.swiper-container', {
+  // Optional: Configure Swiper options
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
