@@ -155,7 +155,10 @@ body {
   color: black !important;
 }
 
- 
+ .custom-font {
+  font-family: 'Lilita One' Impact,bold 
+ }
+
 #about-me {
   border-radius: 5px;
 }
@@ -172,3 +175,4 @@ body {
 #story {
   font-family: 'Lilita One' Impact,bold 
 }
+
