@@ -80,3 +80,17 @@ var swiper = new Swiper('.swiper-container', {
     clickable: true,
   },
 });
+
+
+
+const portfolioElement = document.getElementById("portfolio");
+
+function animateWobble() {
+  portfolioElement.classList.add("animate__wobble");
+
+  setTimeout(function() {
+    portfolioElement.classList.remove("animate__wobble");
+  }, 1000);
+}
+
+setInterval(animateWobble, 5000);

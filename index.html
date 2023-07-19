@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -18,7 +19,7 @@
         <div class="mb-5">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-              <a class="navbar-brand" href="#">Carters Portfolio</a>
+              <a class="navbar-brand  animate__animated"  id="portfolio" href="#">Carters Portfolio</a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -28,7 +29,7 @@
                     <a id="darkModeBtn" class="nav-link" href="#"><i class="fas fa-moon"></i></a>
                   </li>
                   <li class="nav-item">
-                    <a id="about-me" class="nav-link" href="#story">About</a>
+                    <a id="about-me" class="nav-link" href="#story">Story</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="https://docs.google.com/document/d/1oNjixFHy7YkJmyEIgYh3X6UzTYFRrwqo/edit?usp=sharing&ouid=112437315965066852301&rtpof=true&sd=true" target="_blank" >Resume</a>
@@ -57,7 +58,7 @@
                 
                 <div class="col-log-6 d-flex flex-column align-items-center">
                   <h1 id="story" class="display-5 fw-bold lh-1 mb-3 text-center">My Story</h1>
-                  <p class="h2 text-center">Software Developer</p>
+                  <p id="software-text" class="h2 text-center">Software Developer</p>
                   <p class="lead text-center">
                     I'm a motivated and experienced software developer with a passion for creating innovative web applications. Proficient in JavaScript, HTML, CSS, and Bootstrap. Constantly learning and staying up-to-date with industry trends.
                   </p>
@@ -71,7 +72,7 @@
                   </div>
             
                   <div class="d-grid gap-2 d-md-flex justify-content-center mb-3">
-                    <button type="button" class="btn btn-dark btn-lg px-4 me-md-2">Download Resume</button>
+                    <a class="btn btn-dark btn-lrg" href="https://mmilner29.github.io/the-recipe-hub/" target="_blank">Resume</a>
                   </div>
                 </div>
               </div>
@@ -80,64 +81,62 @@
 
 
 
-          <div class="container py-5">
-  <h1 class="text-center text-decoration-underline" id="projects">Project Section</h1>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="project-card">
-          <img src="images/recipe-box.jpg" alt="Project 1" class="project-image">
-          <div class="project-content">
-            <div class="project-description">
-              <p>This application uses a third-party api to generate random recipes.</p>
-            </div>
-            <div class="buttons">
-              <a class="btn btn-dark" href="https://mmilner29.github.io/the-recipe-hub/" target="_blank">View Project</a>
-              <a class="btn btn-dark" href="https://github.com/yourusername/your-repo" target="_blank">View Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="project-card">
-          <img src="images/m-laptop.jpg" alt="Project 2" class="project-image">
-          <div class="project-content">
-            <div class="project-description">
-              <p>Description for Project 2</p>
-            </div>
-            <div class="buttons">
-              <a class="btn btn-dark" href="https://project2.com" target="_blank">View Project</a>
-              <a class="btn btn-dark" href="https://github.com/yourusername/project2" target="_blank">View Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="project-card">
-          <img src="images/password.jpg" alt="Project 2" class="project-image">
-          <div class="project-content">
-            <div class="project-description">
-             
-              <p>Description for Project 3</p>
-            </div>
-            <div class="buttons">
-              <a class="btn btn-dark" href="https://project2.com" target="_blank">View Project</a>
-              <a class="btn btn-dark" href="https://github.com/yourusername/project2" target="_blank">View Code</a>
-            </div>
-          </div>
-          <!-- <div class="swiper-pagination"></div> -->
-        </div>
-      </div>
-  
-                <!-- Add navigation buttons -->
+            <div class="container py-5">
+              <h1 class="text-center text-decoration-underline" id="story">Project Section</h1>
+              <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="project-card">
+                      <img src="images/recipe.png" alt="Project 1" class="project-image project-image-large">
+                    </div>
+                    <div class="project-description">
+                      <h3>Technology: JavaScript, Skeleton, HTML, CSS</h3>
+                      <p>This application uses a third-party API to generate random recipes.</p>
+                    </div>
+                    <div class="buttons">
+                      <a class="btn btn-dark" href="https://mmilner29.github.io/the-recipe-hub/" target="_blank">View Project</a>
+                      <a class="btn btn-dark" href="https://github.com/carternadain/the-recipe-hub" target="_blank">View Code</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="project-card">
+                      <img src="images/no.png" alt="Project 2" class="project-image project-image-large">
+                    </div>
+                    <div class="project-description">
+                      <h3>Technology: JavaScript, HTML, CSS</h3>
+                      <p>This application allows users to generate random passwords.</p>
+                    </div>
+                    <div class="buttons">
+                      <a class="btn btn-dark" href="https://carternadain.github.io/Password-Generator-project-/" target="_blank">View Project</a>
+                      <a class="btn btn-dark" href="https://github.com/carternadain/js-password-generator" target="_blank">View Code</a>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="project-card">
+                      <img src="images/jobtrack.png" alt="Project 3" class="project-image project-image-large">
+                    </div>
+                    <div class="project-description">
+                      <h3>Technology: HTML, JavaScript, Bootstrap</h3>
+                      <p>This application allows users to track jobs in order to stay organized.</p>
+                    </div>
+                    <div class="buttons">
+                      <a class="btn btn-dark" href="https://carternadain.github.io/Job_Tracker-v1/" target="_blank">View Project</a>
+                      <a class="btn btn-dark" href="https://github.com/carternadain/Job_Tracker-v1" target="_blank">View Code</a>
+                    </div>
+                  </div>
+                </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+              </div>
+            </div>
+            
+
     </div>
     <div class="container py-5">
     </div>
                 
   <div class="container py-5">
-  <h1 class="text-center text-decoration-underline" id="about">About Me</h1>
+  <h1 class="text-center text-decoration-underline" id="story">About Me</h1>
   <div class="row align-items-center">
     <div class="col-md-4 col-12">
       <div class="about-image">
