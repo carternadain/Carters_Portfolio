@@ -9,7 +9,7 @@ https://carternadain.github.io/Carters_Portfolio/
 If you'd like to use this porfolio yourself feel free to copy this code you will just git clone the `https` link onto your machine. To clone this you would open your terminal window `cd` where you want the file to go then write `git clone examplelink` then open up the new project in your favorite code writer. 
 
 # Application in use
-<img src="./images/app.jpg" alt="image of application in use">
+<img src="./images/app.png" alt="image of application in use">
 
 # Prerequisites
 `google chrome`
