@@ -67,19 +67,18 @@ darkModeBtn.addEventListener('click', () => {
 
 
 
-var swiper = new Swiper('.swiper-container', {
-  // Optional: Configure Swiper options
-  slidesPerView: 1,
-  spaceBetween: 10,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+const swiper = new Swiper('.swiper-container', {
+  loop: true,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
   },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 });
+
 
 
 
